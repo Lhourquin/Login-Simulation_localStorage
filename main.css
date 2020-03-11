@@ -1,10 +1,10 @@
 #form-conection{
     position: relative;
-   /* background-color: blue;*/
+    background-color: whitesmoke;
     width: 400px;
     padding: 20px;
     border-radius: 20px;
-    border: ;
+    
     margin: 56px 2px 0px 2px;
 }
 #makeConection{
@@ -17,4 +17,10 @@
     margin-right: 0px;
     margin: 0px 0px 0px 347px;
     cursor: pointer;
+}
+@media screen and (max-width: 600px){
+    h1{
+    
+       font-size : 1.7rem;
+    }
 }
