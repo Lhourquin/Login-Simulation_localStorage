@@ -9,6 +9,11 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="main.css">
+		<style>
+			.displayNone{
+				display: none;
+			}
+		</style>
 		<title>Document</title>
 	</head>
 	<body>
@@ -17,7 +22,7 @@
 
 			<div class="d-flex justify-content-between">
 				<div>
-					<button id="conection">Conection</button>
+					<button id="connection">Conection</button>
 				</div>
 			</div>
 			</div>
@@ -50,11 +55,15 @@ Donec urna risus, viverra ut lacus ac, accumsan laoreet lectus. Cras nec ullamco
 			<div class="col-lg-6" id="container-form-inscription">
 					
 					<div class="container w-75">
+						<i id="cross-form-inscription" class="fas fa-times cross-for-inscription"></i>
+
 						<div class="w-100">
 							<div class="w-100">
+
 							<h2>Sign in !</h2>
 
-						</div><form>
+						</div>
+						<form>
 								<div class="form-row">
 									<div class="col form-group">
 										<label>First name </label>   
