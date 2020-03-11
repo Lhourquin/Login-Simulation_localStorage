@@ -1,0 +1,13 @@
+#form-conection{
+    position: relative;
+    background-color: blue;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px 50px 0px 0px;
+}
+#makeConection{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
