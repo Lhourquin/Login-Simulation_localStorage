@@ -1,5 +1,10 @@
 let conection = document.getElementById('conection');
 let makeConection = document.getElementById('makeConection');
+let containerFormInscription = document.getElementById('container-form-inscription');
+let md = window.matchMedia("(max-width: 991px)");
+let buttonInscriptionMobile = document.getElementById('buttonInscriptionMobile');
+let welcomeToTheForum = document.getElementById('welcomeToTheForum');
+
 
 conection.addEventListener('click', (e) => {
     let target = e.target;
@@ -20,3 +25,30 @@ conection.addEventListener('click', (e) => {
     });
 
 });
+
+function mediaScreen (mq) {
+    if(mq.matches){
+        containerFormInscription.style.display ="none";
+        buttonInscriptionMobile.style.display = "inline";
+
+    }else{
+        containerFormInscription.style.display ="inline";
+        buttonInscriptionMobile.style.display = "none";
+    }
+}
+
+mediaScreen(md);
+
+md.addListener(mediaScreen);
+
+buttonInscriptionMobile.addEventListener('click', (e)=>{
+    let target = e.target;
+
+    if(md.matches){
+        if(target == buttonInscriptionMobile){
+        welcomeToTheForum.style.visibility = 'hidden';  
+        }
+    }else{
+        welcomeToTheForum.style.setProperty('visibility' ,'visible');
+        }
+})
