@@ -14,81 +14,89 @@
 	</head>
 	<body>
 		<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
-			<a class="navbar-brand" href="#">Foodrum</a>
-      <i class="far fa-user userIcon"></i><button class="btn btn-success" id="connection">Déconection</button>
+      <a class="navbar-brand" href="#"><i class="fas fa-hamburger"></i>Foodrum<i class="fas fa-hamburger"></i></a>
+      <div class="d-flex">
+        <div id="userIcon" class="p-2" >
+        <i  class="far fa-user userIcon"></i>
+        <span style="color: azure;">Lcs</span>
+
+      </div>
+      <button class="btn btn-success" id="deconnection">Déconection</button>
+      </div>
+      
+
 		</nav>
 
     <main>
 			<div class="d-flex container-fluid" style="margin-top: 100px;">
 				<div class="row container-fluid d-flex justify-content-between ">
 
-					<div class="col-lg-6 col-sm-12 w-75">
-						
-            <div class="m-3 card w-100">
+					<div id="actuality" class="col-lg-6 col-12 w-75">
+
+						<div class="m-3 card w-100">
 							<div class="card-body">
 								<div class="float-right">
 									<i class="far fa-user"></i>
 									<span>20</span>
 								</div>
-							
 
 
-							<h5 class="card-title">Subject</h5>
-							<p class="card-text"><strong>The last message :</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere quia optio? Veritatis doloremque incidunt natus laudantium ipsum, nisi culpa provident voluptate animi rem quia exercitationem et quo assumenda inventore?</p>
-              <a href="#" class="btn btn-primary">Button</a>
-              <div>
-                <span class="float-right">Date : 26/06/20</span>
-              </div>
-            </div>
-            
+
+								<h5 class="card-title">Subject</h5>
+								<p class="card-text"><strong>The last message :</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere quia optio? Veritatis doloremque incidunt natus laudantium ipsum, nisi culpa provident voluptate animi rem quia exercitationem et quo assumenda inventore?</p>
+								<a href="#" class="btn btn-primary">Button</a>
+								<div>
+									<span class="float-right">Date : 26/06/20</span>
+								</div>
+							</div>
+
 						</div><div class="m-3 card w-100">
 							<div class="card-body">
 								<div class="float-right">
 									<i class="far fa-user"></i>
 									<span>20</span>
 								</div>
-							
 
 
-							<h5 class="card-title">Subject</h5>
-							<p class="card-text"><strong>The last message :</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere quia optio? Veritatis doloremque incidunt natus laudantium ipsum, nisi culpa provident voluptate animi rem quia exercitationem et quo assumenda inventore?</p>
-              <a href="#" class="btn btn-primary">Button</a>
-              <div>
-                <span class="float-right">Date : 26/06/20</span>
-              </div>
-            </div>
-						
+
+								<h5 class="card-title">Subject</h5>
+								<p class="card-text"><strong>The last message :</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere quia optio? Veritatis doloremque incidunt natus laudantium ipsum, nisi culpa provident voluptate animi rem quia exercitationem et quo assumenda inventore?</p>
+								<a href="#" class="btn btn-primary">Button</a>
+								<div>
+									<span class="float-right">Date : 26/06/20</span>
+								</div>
+							</div>
+
+						</div>
 					</div>
-				</div>
 
 
 
-				<div class="col-lg-4 col-sm-12 w-25">
-          <h2>My profile</h2>
-					<div class="p-2 card">
-						<img class="card-img-top" src="https://picsum.photos/200/150/?random
-                  ">
-                  <h4 class="card-title">Pseudo</h4>
+					<div id="userProfile" class="col-lg-4 col-12 w-25">
+						<h2>My profile</h2>
+						<div class="p-2 card">
+							<img class="card-img-top" src="https://static.750g.com/images/1200-630/a35427c20840093c562488c3e300aee9/potatoes.jpeg">
+							<h4 id="userProfilePseudo" class="card-title">Pseudo</h4>
 
-						<div class="card-block">
-							
-							<div class="meta">
-								<a href="#">myEmail@gmail.com</a>
-              </div>
-              <div>
-                20 years old
-              </div>
-							<div class="card-text">
-								i'm web dev junior
+							<div class="card-block">
+
+								<div id="userProfileMail" class="meta">
+									myEmail@gmail.com
+								</div>
+								<div id="userProfileAge">
+									20 years old
+								</div>
+								<div class="card-text">
+									I like potatoes
+								</div>
+							</div>
+							<div class="card-footer">
+								<span id="dateOfConection" class="float-right">connection at 21:54 the 07/01/2020</span>
+								<span id="userProfileCity"><i class="fas fa-map-marker-alt"></i>City</span>
 							</div>
 						</div>
-						<div class="card-footer">
-							<span class="float-right">connection at 21:54 the 07/01/2020</span>
-							<span><i class="fas fa-map-marker-alt"></i>City</span>
-						</div>
 					</div>
 				</div>
-			</div>
 
 
 
@@ -102,5 +110,6 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
+    <script src="index.js"></script>
+  </body>
 </html>
