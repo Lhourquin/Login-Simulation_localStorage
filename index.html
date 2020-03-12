@@ -10,111 +10,162 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="main.css">
 		<style>
-			.displayNone{
-				display: none;
-			}
+.displayNone{
+	display: none;
+}
 		</style>
-		<title>Document</title>
+		<title>Foodrum</title>
 	</head>
 	<body>
 		<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
-			<a class="navbar-brand" href="#">Forum</a>
+			<a class="navbar-brand" href="#">Foodrum</a>
 
 			<div class="d-flex justify-content-between">
 				<div>
-					<button id="connection">Conection</button>
+					<button class="btn btn-success" id="connection">Conection</button>
 				</div>
 			</div>
 			</div>
 
 
 		</nav>
-		<header>
+		<main>
 			<div class="fixed-top" id="makeConnection">
 			</div>
 			<div class="container-fluid" style="margin-top: 100px;">
-    <div class="row">
-				<div id="welcomeToTheForum" class="col-lg-5">
-    <div class="container w-75">
-						<h2>Welcome to the forum!</h2>
-						
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nulla et libero aliquam commodo. Nullam molestie velit porttitor luctus pharetra. Etiam vitae condimentum urna. Cras quis turpis placerat, gravida massa vel, posuere lorem. Morbi vel tellus mi. Integer scelerisque lorem vel lorem hendrerit, sed suscipit augue blandit. Nullam congue dignissim pulvinar. Nam ac mauris sapien. Nunc lobortis justo vel eleifend mollis.Aenean consequat vel sapien nec blandit, tempor mauris. Etiam finibus urna condimentum, commodo ipsum sit amet, gravida nunc. Sed suscipit magna tellus, non laoreet nunc euismod ultrices. Aliquam ultrices leo at venenatis rhoncus. Curabitur faucibus ex sed leo placerat finibus. Nam tempus magna sed ipsum lobortis, vitae eleifend libero maximus. Proin porta cursus mollis. Cras tincidunt nulla lectus, sagittis ornare dolor lobortis nec. Nam ac ultrices ipsum. Ut tempor lobortis vehicula. Pellentesque sed mi sed sem facilisis molestie. Morbi auctor ante arcu, vel bibendum purus fermentum sed. Phasellus luctus ultricies sem. Donec molestie posuere diam.Donec urna risus, viverra ut lacus ac, accumsan laoreet lectus. Cras nec ullamcorper tortor. Phasellus sollicitudin hendrerit metus, at laoreet diam euismod quis. Fusce nec aliquam lectus, vel sagittis nisl. Pellentesque varius, lacus ut euismod semper, ante lorem iaculis massa, non consequat tortor elit nec massa. Pellentesque sit amet urna ipsum. Nam eu varius ex. Maecenas malesuada, turpis mattis bibendum congue, enim quam scelerisque magna, ut vestibulum erat felis congue nibh. Etiam et erat id arcu auctor ultricies. Aliquam viverra orci consequat ultricies imperdiet. Sed eros erat, sodales eget accumsan vitae, suscipit eu turpis.</p>
-					
-					<button id="buttonInscriptionMobile">S'inscrire</button>
-				</div>
-			</div>
-			<div class="col-lg-6" id="container-form-inscription">
-					
-					<div class="container w-75">
-						<i id="cross-form-inscription" class="fas fa-times cross-for-inscription"></i>
+				<div class="row">
+					<div id="welcomeToTheForum" class="col-lg-5">
+						<div class="container w-75">
+							<h1 class="text-center">Welcome to the foodrum!</h1>
+							<p>Share with your friend your best adress for fast food, discut about your favorite lunch and share some pic of your meal !!</p>
+							<div class="row center">
+								<div class="row">
 
-						<div class="w-100">
-							<div class="w-100">
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
+									</figure>
 
-							<h2>Sign in !</h2>
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
+									</figure>
 
-						</div>
-						<form>
-								<div class="form-row">
-									<div class="col form-group">
-										<label>First name </label>   
-										<input type="text" class="form-control" placeholder="">
-									</div> <!-- form-group end.// -->
-									<div class="col form-group">
-										<label>Last name</label>
-										<input type="text" class="form-control" placeholder=" ">
-									</div> <!-- form-group end.// -->
-								</div> <!-- form-row end.// -->
-								<div class="form-group">
-									<label>Email address</label>
-									<input type="email" class="form-control" placeholder="">
-									<small class="form-text text-muted">We'll never share your email with anyone else.</small>
-								</div> <!-- form-group end.// -->
-								<div class="form-group">
-									<label class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="gender" value="option1">
-										<span class="form-check-label"> Male </span>
-									</label>
-									<label class="form-check form-check-inline">
-										<input class="form-check-input" type="radio" name="gender" value="option2">
-										<span class="form-check-label"> Female</span>
-									</label>
-								</div> <!-- form-group end.// -->
-								<div class="form-row">
-									<div class="form-group col-md-6">
-										<label>City</label>
-										<input type="text" class="form-control">
-									</div> <!-- form-group end.// -->
-									<div class="form-group col-md-6">
-										<label>Country</label>
-										<select id="inputState" class="form-control">
-											<option> Choose...</option>
-											<option>Uzbekistan</option>
-											<option>Russia</option>
-											<option selected="">United States</option>
-											<option>India</option>
-											<option>Afganistan</option>
-										</select>
-									</div> <!-- form-group end.// -->
-								</div> <!-- form-row.// -->
-								<div class="form-group">
-									<label>Create password</label>
-									<input class="form-control" type="password">
-								</div> <!-- form-group end.// -->  
-								<div class="form-group">
-									<button type="submit" class="btn btn-primary btn-block"> Register  </button>
-								</div> <!-- form-group// -->      
-								<small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
-							</form>
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
+									</figure>
+								</div>
+								<div class="row">
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
+									</figure>
+
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
+									</figure>
+
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" class="img-fluid" />
+									</figure>
+
+								</div>
+								<div class="row">
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" class="img-fluid" />
+									</figure>
+
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" />
+									</figure>
+
+									<figure class="col-md-4">
+										<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" class="img-fluid" />
+									</figure>
+								</div>
+
+
+
+							</div>
+							
+							<div class=" text-center">
+								<button class="m-3 btn btn-primary" id="buttonInscriptionMobile">Suscribe</button>
+
+							</div>
 						</div>
 					</div>
+					<div class="col-lg-6" id="container-form-inscription">
+
+						<div class="container w-75">
+							<i id="cross-form-inscription" class="fas fa-times cross-for-inscription"></i>
+
+							<div class="w-100">
+								<div class="w-100">
+
+									<h2>Sign up !</h2>
+
+								</div>
+								<form>
+									<div class="form-row">
+										<div class="col form-group">
+											<label>First name </label>   
+											<input type="text" class="form-control" placeholder="">
+										</div> <!-- form-group end.// -->
+										<div class="col form-group">
+											<label>Last name</label>
+											<input type="text" class="form-control" placeholder=" ">
+										</div> <!-- form-group end.// -->
+									</div> <!-- form-row end.// -->
+									<div class="form-group">
+										<label>Email address</label>
+										<input type="email" class="form-control" placeholder="">
+										<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div> <!-- form-group end.// -->
+									<div class="form-group">
+										<label class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="gender" value="option1">
+											<span class="form-check-label"> Male </span>
+										</label>
+										<label class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="gender" value="option2">
+											<span class="form-check-label"> Female</span>
+										</label>
+									</div> <!-- form-group end.// -->
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label>City</label>
+											<input type="text" class="form-control">
+										</div> <!-- form-group end.// -->
+										<div class="form-group col-md-6">
+											<label>Country</label>
+											<select id="inputState" class="form-control">
+												<option> Choose...</option>
+												<option>Uzbekistan</option>
+												<option>Russia</option>
+												<option selected="">United States</option>
+												<option>India</option>
+												<option>Afganistan</option>
+											</select>
+										</div> <!-- form-group end.// -->
+									</div> <!-- form-row.// -->
+									<div class="form-group">
+										<label>Create password</label>
+										<input class="form-control" type="password">
+									</div> <!-- form-group end.// -->  
+									<div class="form-group">
+										<button type="submit" class="btn btn-primary btn-block"> Register  </button>
+									</div> <!-- form-group// -->      
+									<small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+								</form>
+							</div>
+						</div>
+					</div>
+
 				</div>
-    
-    </div>
-    
+
 			</div>
 
-		</header>
+		</main>
+		<footer>
+
+		</footer>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

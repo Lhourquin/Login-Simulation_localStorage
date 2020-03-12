@@ -28,3 +28,9 @@
     float: right;
     cursor: pointer;
 }
+
+@media screen and (max-width : 651px){
+    h1{
+        font-size : 2rem;
+    }
+}
