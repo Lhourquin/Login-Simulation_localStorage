@@ -24,7 +24,7 @@
 }
 
 /*cross for close the form inscription on mobile/tablet device*/
-.cross-for-inscription{
+.cross-for-inscription, .cross-for-profile{
     float: right;
     cursor: pointer;
 }

@@ -118,7 +118,7 @@ let userProfileCity = document.getElementById('userProfileCity');
 let dateOfConection = document.getElementById('dateOfConection');
 let userIcon = document.getElementById('userIcon');
 let actuality = document.getElementById('actuality');
-
+const crossProfile = document.getElementById('cross-for-profile');
 
 
 
@@ -135,49 +135,46 @@ function mediaScreen (mq) {
 
         // Element display none
         userProfile.style.display ="none";
-
+        crossProfile.style.display ="inline";
         // Element display
-        /*buttonInscriptionMobile.style.display = "inline";
-        crossInscription.style.display ='inline';*/
+        
 
         // Event displaying the profile and close the actuality block
         userIcon.addEventListener('click', (e)=>{
             const target = e.target;
 
-   
-            if(target == userIcon){
-            //userProfile.classList.add('displayNone');  
-            userProfile.style.display ="inline";
-            actuality.style.display = "none";
+            if(mq.matches){
+                if(target == userIcon){
+                    userProfile.style.display ="inline";
+                    actuality.style.display = "none";
+            }
+            
          }
    
         });
 
+
         // Event close the profile and display the actuality block
-        /*
-        crossInscription.addEventListener('click', (e)=>{
+        
+        crossProfile.addEventListener('click', (e)=>{
             const target = e.target;
 
    
-            if(target == crossInscription){
-            welcomeToTheForum.classList.remove('displayNone');  
-            containerFormInscription.style.display ="none";
+            if(target == crossProfile){
+                actuality.style.display = "inline";
+                userProfile.style.display ="none";
 
          }
    
-        })*/
+        })
     }else{
-        // Element that changes without a particular event //
 
         // Element display
-     /*
-        containerFormInscription.style.display ="inline";
-
+        userProfile.style.display ="inline";
+        actuality.style.display = "inline";
+ 
         // Element display none
-        buttonInscriptionMobile.style.display = "none";
-        crossInscription.style.display ='none';
-        welcomeToTheForum.classList.remove('displayNone');  
-*/
+        crossProfile.style.display ="none";
     }
 }
 
