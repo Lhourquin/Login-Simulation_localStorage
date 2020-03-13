@@ -1,41 +1,41 @@
 /*style of form connection when is display*/
 #form-conection{
-    position: relative;
-    background-color: whitesmoke;
-    width: 400px;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 56px 2px 0px 2px;
+	position: relative;
+	background-color: whitesmoke;
+	width: 400px;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 56px 2px 0px 2px;
 }
 
 /*div where the form connection is display*/
 #makeConnection{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
 }
 
 /*cross for close the form connection */
 .cross-for-connection{
-    position: relative;
-    margin-right: 0px;
-    margin: 0px 0px 0px 347px;
-    cursor: pointer;
+	position: relative;
+	margin-right: 0px;
+	margin: 0px 0px 0px 347px;
+	cursor: pointer;
 }
 
 /*cross for close the form inscription on mobile/tablet device*/
 .cross-for-inscription, .cross-for-profile{
-    float: right;
-    cursor: pointer;
+	float: right;
+	cursor: pointer;
 }
 
 @media screen and (max-width : 651px){
-    h1{
-        font-size : 2rem;
-    }
+	h1{
+		font-size : 2rem;
+	}
 }
 
 #userIcon{
-    color: white;
-    cursor: pointer;
+	color: white;
+	cursor: pointer;
 }
