@@ -25,13 +25,13 @@ if (window.location.href.indexOf("index") != -1){
 	formDataInscription.addEventListener("submit", getValues);
 
 	// Connection
-
+  /*
 	let getData = JSON.parse(localStorage.getItem('userAccount'));
 
 
 	let formConection = document.getElementById('form-conection');
 
-	if(document.body.contains(formConection)){
+	
 		console.log("is load");
 		let inputEmail = document.getElementById('inputEmail').value;
 		let inputPassword = document.getElementById('inputPassword').value;
@@ -53,9 +53,9 @@ if (window.location.href.indexOf("index") != -1){
 				}
 			}
 
-			submitConection.addEventListener('click', checkAccount);
+			formConection.addEventListener('click', checkAccount);
 		}
-	}
+	*/
 
 
 
