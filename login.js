@@ -1,3 +1,4 @@
+/////////////////////////////:: INDEX ////////////////////
 if (window.location.href.indexOf("index") != -1){
 
 	//Inscription
@@ -60,45 +61,12 @@ if (window.location.href.indexOf("index") != -1){
 
 	formDataInscription.addEventListener("submit",formControl);
 
-	// Connection
-  /*
-	let getData = JSON.parse(localStorage.getItem('userAccount'));
-
-
-	let formConection = document.getElementById('form-conection');
-
 	
-		console.log("is load");
-		let inputEmail = document.getElementById('inputEmail').value;
-		let inputPassword = document.getElementById('inputPassword').value;
-		let submitConection = document.getElementById('submitConection');
-		let arr = [];
-
-
-		for(let itm in getData){
-			arr.push(getData[itm]);
-		}
-
-		function checkAccount(){
-			if(inputEmail == arr[2]){
-				console.log(inputEmail);
-				if(inputPassword != arr[6]){
-					alert('wrong password !');
-				}else if (inputPassword == arr[6]){
-					sessionStorage.setItem('userSession', JSON.stringify(getData));
-				}
-			}
-
-			formConection.addEventListener('click', checkAccount);
-		}
-	*/
-
-
-
-
 }
+	
 
 
+/////////////////////////FORUM ///////////////////////
 if (window.location.href.indexOf("forum") != -1){
 
 	let getData = JSON.parse(localStorage.getItem('userAccount'));
