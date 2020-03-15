@@ -12,10 +12,9 @@ const md = window.matchMedia("(max-width: 991px)");
 		const buttonInscriptionMobile = document.getElementById('buttonInscriptionMobile');
 		const welcomeToTheForum = document.getElementById('welcomeToTheForum');
 		const crossInscription = document.getElementById('cross-form-inscription');
-
+	
+		 
 		// Event displaying form conection and close form connection
-
-
 		connection.addEventListener('click', (e) => {
 			const target = e.target;
 
@@ -120,6 +119,7 @@ const md = window.matchMedia("(max-width: 991px)");
 		let actuality = document.getElementById('actuality');
 		const crossProfile = document.getElementById('cross-for-profile');
 
+		
 
 
 		//////////////////////////////////////////////////////////////
