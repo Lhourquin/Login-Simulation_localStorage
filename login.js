@@ -12,8 +12,12 @@ if (window.location.href.indexOf("index") != -1){
 
 		// go over the array storing input name & value pairs
 		elements.forEach((el) => {
+			
 			if (el.type !== "submit"){
-				userData[el.name] = el.value;
+				if(el.value !== ""){
+					const value = el.value.trim();
+					userData[el.name] = value;
+				}
 			}
 		});
 
