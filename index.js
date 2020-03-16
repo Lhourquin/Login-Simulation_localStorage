@@ -26,19 +26,19 @@ const md = window.matchMedia("(max-width: 991px)");
 
       }
       // Target element of form conncetion
-      let submitConection = document.getElementById('submitConection');
-      let inputEmail = document.getElementById('inputEmail');
-      let inputPassword = document.getElementById('inputPassword');
-      let getData = JSON.parse(localStorage.getItem('userAccount'));
-      let arr = [];
-      // Target the cross for close the form connection
+      const submitConection = document.getElementById('submitConection');
+      const inputEmail = document.getElementById('inputEmail');
+      const inputPassword = document.getElementById('inputPassword');
+      const getData = JSON.parse(localStorage.getItem('userAccount'));
+      const arr = [];
       const crossConnection = document.getElementById('cross-form-connection');
 
+      // Add data of userAccount to the Array
       for(let itm in getData){
         arr.push(getData[itm]);
       }
 
-
+      // Check and connection to the forum
       submitConection.addEventListener('click', (e)=>{
         e.preventDefault();
         const target = e.target;
@@ -136,8 +136,8 @@ const md = window.matchMedia("(max-width: 991px)");
 ///////////////////////////////////////////////////////////////
 
 
-  ///////////////////////////////////////////////////////////////
-  ///////////////////// FORUM HTML //////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////// FORUM HTML //////////////////////////////
 
   if (window.location.href.indexOf("forum") != -1){
     // Target element
