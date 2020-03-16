@@ -1,4 +1,5 @@
 /////////////////////////////:: INDEX ////////////////////
+/*
 if (window.location.href.indexOf("index") != -1){
 
 	//Inscription
@@ -91,3 +92,4 @@ if (window.location.href.indexOf("forum") != -1){
 
 
 }
+*/

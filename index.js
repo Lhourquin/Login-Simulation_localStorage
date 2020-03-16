@@ -45,12 +45,12 @@ const md = window.matchMedia("(max-width: 991px)");
 
 				if(target == submitConection){
 					if(inputEmail.value !== arr[2]){
-						swal.fire("Adresse inconnue !", "veuillez entrer une adresse corect.", "Error");
+						swal.fire("Unknown address.", "Please enter a correct address.", "Error");
 					}else{
 						if(inputPassword.value !== arr[6]){
-							swal.fire("Mot de passe inconnue !", "veuillez entrer un mot de passe corect.", "Error");
+							swal.fire("Unknown password", "Please enter a correct password.", "Error");
 						}else{
-							swal.fire("Conection autoriser !", "Vous allez être redirigé !", "success");
+							swal.fire("Account authenticate", "Welcome us " + arr[0] , "success");
 							sessionStorage.setItem('userSession', JSON.stringify(getData));
 							setTimeout(function(){ 
 								window.location.href = "forum.html";
@@ -149,14 +149,14 @@ const md = window.matchMedia("(max-width: 991px)");
 			}
 
 			if(flag){
-				swal.fire("Inscription comfirmer !", "Vous allez être redirigé !", "success");
+				swal.fire("Registration confirm", "Welcome us " + arr[0], "success");
 				getValues(e);
 				setTimeout(function(){ 
 					window.location.href = "forum.html";
 				}, 2000);
 
 			}else{
-				swal.fire("Erreur !", "Vous n'avez pas rempli le formulaire correctement, réessayez !", "error");
+				swal.fire("Error !", "You did not fill out the form correctly, try again!(looser)", "error");
 			}
 		}
 
