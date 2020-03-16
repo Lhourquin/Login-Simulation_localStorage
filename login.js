@@ -2,8 +2,6 @@
 if (window.location.href.indexOf("index") != -1){
 
 	//Inscription
-	//let formDataInscription = document.getElementById('formDataInscription');
-	let submitRegister = document.getElementById('submitRegister');
 	const inputDataOfSuscribeForm = document.getElementsByClassName('inputDataOfSuscribeForm');
 	let formDataInscription = document.getElementById('formDataInscription');
 
@@ -59,9 +57,10 @@ if (window.location.href.indexOf("index") != -1){
 		localStorage.setItem('userAccount',JSON.stringify(userData));
 	}  
 
-	formDataInscription.addEventListener("submit",formControl);
 
 	
+
+	formDataInscription.addEventListener("submit",formControl);	
 }
 	
 
