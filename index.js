@@ -149,8 +149,10 @@ const md = window.matchMedia("(max-width: 991px)");
 			}
 
 			if(flag){
-				swal.fire("Registration confirm", "Welcome us " + arr[0], "success");
 				getValues(e);
+
+				swal.fire("Registration confirm", "Welcome us " + arr[0], "success");
+				
 				setTimeout(function(){ 
 					window.location.href = "forum.html";
 				}, 2000);
@@ -162,6 +164,7 @@ const md = window.matchMedia("(max-width: 991px)");
 
 		// Get the data
 		const userData = {};
+		let arr = [];
 
 		function getValues(e) {
 
@@ -177,6 +180,9 @@ const md = window.matchMedia("(max-width: 991px)");
 				}
 			});
 
+			for(let itm in userData)[
+				arr.push(userData[itm])
+			]
 			// finally save to localStorage and sessionStorage
 			sessionStorage.setItem('userSession', JSON.stringify(userData));
 			localStorage.setItem('userAccount',JSON.stringify(userData));
