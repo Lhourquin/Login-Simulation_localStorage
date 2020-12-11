@@ -1,3 +1,21 @@
+/*media queries*/
+@media screen and (min-width: 320px) and (max-width: 640px) {
+	/*style of form connection when is display*/
+#form-conection{
+	position: relative;
+	background-color: whitesmoke;
+	width: 100%;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 56px 2px 0px 2px;
+}
+	/*cross for close the form connection */
+.cross-for-connection{
+	position: relative;
+	cursor: pointer;
+}
+
+  }
 /*style of form connection when is display*/
 #form-conection{
 	position: relative;
@@ -22,6 +40,7 @@
 	margin: 0px 0px 0px 347px;
 	cursor: pointer;
 }
+
 
 /*cross for close the form inscription on mobile/tablet device*/
 .cross-for-inscription, .cross-for-profile{
